@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/f47ea558db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png " alt="myimage" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Khushi Jafri</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="userimage">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Innovative problem-solver with a passion for technology. Eager to apply my fresh perspective and
+                        unwavering dedication to contribute effectively to innovative projects. Quick learner and a problemsolving enthusiast ready to make an impact in the tech world.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education </p>
+                    </div>
+
+                     <!--------------skills-->
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web/App Development</li>
+                            <li><span>Web Desiner</span><br>Wesite/App Design</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <!--------------experience-->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Exp1</span><br>....</li>
+                            <li><span>Exp2</span><br>....</li>
+
+                        </ul>
+                    </div>
+                    <!------------education-->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Graduation</span><br>Bachelor's Degree in Technology (current)<br>Academic marks- 7.8CGPA<br>2021 – 2025</li>
+                            <li><span>Class 12</span><br>City Montessori School, Lucknow <br>Academic Marks- 91%<br>Year of completion- 2020</li>
+                            <li><span>Class 10</span><br>City Montessori School, Lucknow <br>Academic Marks- 90%<br>Year of completion- 2018</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------services----------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Transforming Ideas into Functional Websites: Harness the power of cutting-edge web development to bring your vision to life. With expertise in front-end and back-end technologies, I specialize in building responsive, scalable, and user-friendly websites that deliver exceptional performance across devices. From e-commerce platforms to custom web applications, I leverage the latest tools and frameworks to create seamless digital experiences that resonate with your audience. Let's collaborate to turn your concepts into reality and propel your online presence to new heights.</p>
+                    <a href="#">Learn More</a>
+    
+                 </div>
+             <div>
+                <i class="fa-solid fa-swatchbook"></i>
+                <h2>Web Design</h2>
+                <p>Crafting Stunning Digital Experiences: Elevate your online presence with bespoke web design solutions tailored to your unique vision and goals. From captivating visuals to seamless user experiences, I specialize in creating dynamic websites that engage your audience and drive results. Whether you're a startup looking to make a splash or an established brand seeking a fresh digital identity, let's collaborate to bring your ideas to life and leave a lasting impression in the digital world.</p>
+                <a href="#">Learn More</a>
+
+             </div>
+             <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>UI/UX</h2>
+                <p>Crafting Intuitive Digital Journeys: Elevate your user experience with tailored UI/UX design solutions. With a keen eye for detail and a deep understanding of user behavior, I specialize in creating engaging interfaces that delight and captivate audiences. From wireframing to prototyping, I focus on enhancing usability and accessibility while maintaining a sleek and modern aesthetic. Whether you're launching a new product or revamping an existing platform, let's collaborate to ensure your users' journey is seamless, intuitive, and unforgettable.</p>
+                <a href="#">Learn More</a>
+
+             </div>  
+            </div>  
+        </div>
+    </div>
+    <!----------------my work-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Project 1</h3>
+                        <p>description of project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                        <p>description of project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>description of project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>   
+        </div>
+    </div>
+    <!--------------------------------contact-------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <P><i class="fa-solid fa-paper-plane"></i>khushijafri1603@gmail.com</P>
+                    <p><i class="fa-solid fa-phone"></i>7355328505</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <!--------resume-------->
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="E-mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Khushi. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwEhOiZ6GZ8bGdxdt6MachffjqYR4hULcqa3nev-0WOL8BLM8E-o9FJREz_l7E6Qhjg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
